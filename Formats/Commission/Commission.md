@@ -9,7 +9,7 @@ It is recommended that the file is named in the following way:
 ```
   [date]-[account]-[reference].json
 ```  
-The `[date]` should be in *yyyy-MM-dd* format, e.g. `2020-10-08`
+The `[date]` should be in ISO 8601 format, e.g. *yyyy-MM-dd* 
 The `[account]` should be the account name, and should only contain alphanumeric and underscore _ characters
 The `[reference]` should be a batch/invoice/export reference. For example if the file represents data for invoice 12345 the reference would be `12345`
 
