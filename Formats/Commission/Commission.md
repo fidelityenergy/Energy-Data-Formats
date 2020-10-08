@@ -25,10 +25,10 @@ The JSON file will have two main components; the header and the detail records, 
 ```json
 {
   "header": {
-    // details of the whole file
+    ...
   },
   "detail": [
-    // detail rows making up the total
+    ...
   ]
 }
 ```
@@ -46,6 +46,7 @@ This section of the file is a summary of the detail rows. If the data represents
   "total": 1481.47,
   "notes": "optional commentary on reason for invoice/document"
 }
+```
 
 ### Detail
 This section is an array of commission record rows. Each row is a JSON object in the following format:
