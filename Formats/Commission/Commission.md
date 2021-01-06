@@ -7,17 +7,18 @@ invoice details as well as the individual commission entries. The invoice detail
 
 It is recommended that the file is named in the following way:
 ```
-  [date]-[account]-[reference].json
+  commission-[date]-[account]-[reference].json
 ```  
-The `[date]` should be in ISO 8601 format, e.g. *yyyy-MM-dd* 
-The `[account]` should be the account name, and should only contain alphanumeric and underscore _ characters
-The `[reference]` should be a batch/invoice/export reference. For example if the file represents data for invoice 12345 the reference would be `12345`
+ - The `commission` prefix identifies the type.
+ - The `[date]` should be in ISO 8601 format, e.g. *yyyy-MM-dd* 
+ - The `[account]` should be the account name, and should only contain alphanumeric and underscore _ characters
+ - The `[reference]` should be a batch/invoice/export reference. For example if the file represents data for invoice 12345 the reference would be `12345`
 
 ### Examples:
 
-`2020-01-01-Acme_Brokers_Ltd-Inv0001.json`  - Export for _Acme Brokers Ltd_ related to invoice Inv0001, dated 1st Jan 2020.
+`commission-2020-01-01-Acme_Brokers_Ltd-Inv0001.json`  - Export for _Acme Brokers Ltd_ related to invoice Inv0001, dated 1st Jan 2020.
 
-`2020-05-31-ZZZ_plc.json`  - Export for _ZZZ plc_ dated 31st May 2020. There is no reference in this example.
+`commission-2020-05-31-ZZZ_plc.json`  - Export for _ZZZ plc_ dated 31st May 2020. There is no reference in this example.
 
 ## Structure
 
