@@ -28,6 +28,8 @@ Our aims are:
 At present the formats are under development so no suppliers will be present here. Any supplier interested in using the formats should
 [submit a new issue](/conficient/Energy-Data-Formats/issues/new) to this repository and we will add you to the list of supporters.
 
+[Hall of Fame](Hall_of_Fame.md)
+
 ## Repository Layout
 
 The `Formats` folder contains each format 
