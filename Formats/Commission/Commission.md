@@ -62,6 +62,16 @@ This section is an array of commission record rows. Each row is a JSON object in
   "notes": "narrative text, e.g. description of reason for payment/clawback"
   }
 ```
+The `type` field denotes the type of energy/service being billed. Recommended values: `gas`, `electricity`, `water` etc.
+The `commission` field should exclude VAT and can be either positive (payment to the broker) or negative (clawback or correction). The `site` field should be
+either the site address or a site reference. 
+
+The `notes` field is optional but it would be good practice to provide some context to the payment. Some examples: 
+ - "Upfront-payment 80%"
+ - "50% on contract start"
+ - "End-of-contract reconciliation"
+ - "CoT clawback"
+ - "Correction of invalid entry"
 
 ## Sample Files
 
