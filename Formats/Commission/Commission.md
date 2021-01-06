@@ -52,9 +52,16 @@ This section of the file is a summary of the detail rows. If the data represents
 This section is an array of commission record rows. Each row is a JSON object in the following format:
 ```json
  {
-  "date": "payment-date-in-ISO8601", 
+  "paymentDate": "payment-date-in-ISO8601", 
+  "startDate": "contract-start-date-in-ISO8601",
+  "type": "energytype, e.g. gas",
   "reference": "[mpan/mprn/other meter reference]",
-  "site": "tbc",
+  "site": "site address or reference",
+  "contract": "contract number or reference",
   "commission": 1234.56
   }
 ```
+
+## Sample Files
+
+Some sample files are included in this folder.
