@@ -58,7 +58,8 @@ This section is an array of commission record rows. Each row is a JSON object in
   "reference": "[mpan/mprn/other meter reference]",
   "site": "site address or reference",
   "contract": "contract number or reference",
-  "commission": 1234.56
+  "commission": 1234.56,
+  "notes": "narrative text, e.g. description of reason for payment/clawback"
   }
 ```
 
