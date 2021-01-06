@@ -1,0 +1,43 @@
+{
+	"header": {
+		"reference": "Test001",
+		"date": "2021-01-31",
+		"items": 3,
+		"subtotal": 1090.00,
+		"tax": 218.00,
+		"total": 1308.00,
+		"notes": "optional commentary on reason for invoice/document"
+	},
+	"detail": [
+		{
+			"paymentDate": "2021-01-01",
+			"startDate": "2020-12-01",
+			"type": "Gas",
+			"reference": "1234567",
+			"site": "Sample site #1",
+			"contract": "C001",
+			"commission": 100.0,
+			"notes": "Initial payment"
+		},
+		{
+			"paymentDate": "2021-01-12",
+			"startDate": "2020-10-11",
+			"type": "Electricity",
+			"reference": "1012341234123",
+			"site": "Sample site #2",
+			"contract": "C002",
+			"commission": 1000.00,
+			"notes": "Missing commission from previous month"
+		},
+		{
+			"paymentDate": "2021-01-31",
+			"startDate": "2020-12-01",
+			"type": "Gas",
+			"reference": "1234567",
+			"site": "Sample site #1",
+			"contract": "C001",
+			"commission": -10.0,
+			"notes": "Clawback for under-usage"
+		}
+	]
+}
