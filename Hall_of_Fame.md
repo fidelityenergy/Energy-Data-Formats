@@ -10,4 +10,5 @@ No suppliers yet listed
 
 ## Brokers
 
-![FidelityEnergyLogo](brokers/LogoFExs.png) Fidelity Energy
+![Fidelity Energy](brokers/LogoFExs.png)
+
