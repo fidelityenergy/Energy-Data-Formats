@@ -6,6 +6,7 @@
 		"subtotal": 1090.00,
 		"tax": 218.00,
 		"total": 1308.00,
+		"currency": "gbp",
 		"notes": "A sample commission file"
 	},
 	"detail": [
