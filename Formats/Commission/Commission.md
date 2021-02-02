@@ -35,7 +35,7 @@ The JSON file will have two main components; the header and the detail records, 
 ```
 
 ### Header
-This section of the file is a summary of the detail rows. If the data represents an invoice/credit, it should match the amounts on that document.
+This section of the file is a summary of the detail rows. If the data represents an invoice/credit, it should match the amounts on that document. The `currency` field is optional and if not specified, _GBP_ is assumed. Use [standard ISO-4217 codes](https://en.wikipedia.org/wiki/ISO_4217)
 
 ```json
 "header": {
@@ -45,6 +45,7 @@ This section of the file is a summary of the detail rows. If the data represents
   "subtotal": 1234.56,
   "tax": 246.91,
   "total": 1481.47,
+  "currency": "gbp",
   "notes": "optional commentary on reason for invoice/document"
 }
 ```
@@ -65,7 +66,7 @@ This section is an array of commission record rows. Each row is a JSON object in
 ```
 The `type` field denotes the type of energy/service being billed. Recommended values: `gas`, `electricity`, `water` etc.
 The `commission` field should exclude VAT and can be either positive (payment to the broker) or negative (clawback or correction). The `site` field should be
-either the site address or a site reference. 
+either the site address or a site reference. The currency of the detail row is specified in the header. 
 
 The `notes` field is optional but it would be good practice to provide some context to the payment. Some examples: 
  - "Upfront-payment 80%"
