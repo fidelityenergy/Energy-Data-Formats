@@ -59,14 +59,20 @@ This section is an array of commission record rows. Each row is a JSON object in
   "type": "energytype, e.g. gas",
   "reference": "[mpan/mprn/other meter reference]",
   "site": "site address or reference",
+  "account": "account reference (optional)",
   "contract": "contract number or reference",
   "commission": 1234.56,
   "notes": "narrative text, e.g. description of reason for payment/clawback"
   }
 ```
 The `type` field denotes the type of energy/service being billed. Recommended values: `gas`, `electricity`, `water` etc.
+
 The `commission` field should exclude VAT and can be either positive (payment to the broker) or negative (clawback or correction). The `site` field should be
 either the site address or a site reference. The currency of the detail row is specified in the header. 
+
+The `reference` field should be MPRN (gas), MPAN second line (electricity).
+
+The `startDate` field is very useful when relating a payment to particular contract: it's possible when a contract is renewed to have payments relating to both the previous contract (e.g. reconciliation of usage) and the new contract (inital payment) for the same meter in the same file. Having a start date will help brokers determine which contract a payment relates to.
 
 The `notes` field is optional but it would be good practice to provide some context to the payment. Some examples: 
  - "Upfront-payment 80%"
